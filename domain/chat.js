@@ -1,7 +1,8 @@
-var Message = {}
-Message.timestamp = Date.now()
-Message.body = ""
+function Message(ts, b) {
+    this.timestamp = ts || Date.now()
+    this.body = b || ""
+}
 
-
-var Chat = {}
-Chat.messages = []
+function Chat() {
+    this.messages = []
+}
